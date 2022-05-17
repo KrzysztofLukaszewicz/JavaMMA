@@ -61,9 +61,9 @@ public class MultiMeme extends SolutionMemory {
       ArrayList<CrossoverOperator> crossoverOperators,
       ArrayList<SolutionOperator> mutationOperators,
       ArrayList<SolutionOperator> hillclimbOperators,
+      ArrayList<SolutionOperator> rnrOperators,
       MemeplexInheritenceFunction memeplexInheritenceFunction,
-      MemeplexMutationOperator memeplexMutationOperator,
-      ArrayList<SolutionOperator> rnrOperators) {
+      MemeplexMutationOperator memeplexMutationOperator) {
     super(evaluationFunction, popSize, generationCount, geneCount, useHistory, bounds);
     this.psFunc = psFunc;
     this.replacementStrategy = replacementStrategy;

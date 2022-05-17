@@ -19,7 +19,7 @@ public class RandomMutation implements SolutionOperatorFactory<Double> {
       Solution ret = solution;
       double bestValue = ret.getSolutionValue();
 
-      for (int i = 0; i < Methods.iomDosMap(depthOfSearch); i++) {
+      for (int i = 0; i < depthOfSearch; i++) {
 
         int j = rand.nextInt(solution.size());
         ret = bitFlip.apply(j).apply(ret);

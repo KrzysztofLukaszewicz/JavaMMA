@@ -16,7 +16,7 @@ public class DavisBit implements SolutionOperatorFactory<Double> {
   public SolutionOperator apply(Double depthOfSearch) {
     return (sol) -> {
       Solution ret = sol;
-      for (int i = 0; i < Methods.iomDosMap(depthOfSearch); i++) {
+      for (int i = 0; i < depthOfSearch; i++) {
 
         double bestValue = ret.getSolutionValue();
         Integer[] indexes = IntStream.range(0, ret.size()).boxed().toArray(Integer[]::new);
